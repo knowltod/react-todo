@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #85C7F2;
+    color: #2F394D;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    background-color: #ECCBD9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .create-todo-form {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95px;
+  }
+
+  .todo-input {
+    width: 70%;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+
+  }
+  
+  .todo-header {
+    background-color: #FF715B;
+    border-radius: 5px;
+    align-self: center;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 12px;
+    border-bottom: 1px solid #56666B;
+  }
+  
+  .list li:last-child {
+    border-bottom: none;
+  }
+
+  .list li label {
+    display: flex;
+    align-items: center;
+  }
+
+  .list li input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+  }
+
+  .list li:has(input:checked) label {
+    color: #779097;
+    text-decoration: line-through;
+  }
+  
+  .add-button {
+    width: 20%;
+    border-radius: 5px;
+    background-color: #56666B;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #2F394D;
+  }
+  
+  .delete-button {
+    background-color: #FF4136; /* Updated to a red color */
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #D30C0A; /* Darker shade of red on hover */
+  }
+  
